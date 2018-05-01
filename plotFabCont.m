@@ -1,4 +1,4 @@
-function [f] = plotFabCont(fab)
+function [f] = plotFabCont(fabOr)
 
 % This function uses the MTEX toolbox plotting parameters to display a
 % contour plot of foliation and lineation components of a tectonite fabric
@@ -7,6 +7,6 @@ function [f] = plotFabCont(fab)
 
 %% make a plot
 f = figure;
-plot(fab*zvector,'antipodal','lower','contour','LineColor','k')
+plot(fabOr*zvector,'antipodal','lower','contour','LineColor','k')
 hold on
-plot(fab*xvector,'antipodal','lower','contour','LineColor','r')
+plot(fabOr*xvector,'antipodal','lower','contour','LineColor','r')
