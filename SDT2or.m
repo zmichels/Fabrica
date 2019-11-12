@@ -19,6 +19,6 @@ linV(linV.z>0) = -linV(linV.z>0);
 
 %% Convert to orientation/rotation
 % Use fabric vectors to define principal axes of a fabric orientation
-fabRot = rotation('map',xvector, linV, zvector, poleV);
+fabRot = rotation('map',xvector, linV, -yvector, poleV);
 fabOr = orientation(fabRot,crystalSymmetry,'mmm');
     
