@@ -14,6 +14,4 @@ end
 
 v = vector3d('polar',(90+plunge)*degree,(90-trend)*degree);
 
-if v.z>0
-    v = -v;
-end
+v(v.z>0) = -v(v.z>0);
