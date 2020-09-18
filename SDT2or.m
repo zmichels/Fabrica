@@ -18,7 +18,26 @@ linV(linV.z>0) = -linV(linV.z>0);
 
 
 %% Convert to orientation/rotation
+
+% is xvector preference set to east or west?
+xdir = getMTEXpref('xAxisDirection');
+% is zvector preference set in or out of page?
+zdir = getMTEXpref('zAxisDirection');
+
+
+switch zdir
+    
+    case 'outOfPlane'
+        poleDir = -yvector;
+        linDir = xvector;
+        
+    case 'intoPlane'
+        poleDir = yvector;
+        linDir = -xvector;
+    
+end
+
 % Use fabric vectors to define principal axes of a fabric orientation
-fabRot = rotation('map',xvector, linV, -yvector, poleV);
+fabRot = rotation('map',linDir, linV, poleDir, poleV);
 fabOr = orientation(fabRot,crystalSymmetry,'mmm');
     

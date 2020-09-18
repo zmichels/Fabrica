@@ -9,7 +9,8 @@
 %% Load some ebsd data
 % For this example, we will use the "Forsterite" dataset included with MTEX
 mtexdata forsterite;
-
+cs = ebsd('f').CS;
+h = [Miller(1,0,0,'direction',cs),Miller(0,1,0,'direction',cs),Miller(0,0,1,'direction',cs)];
 %% Enter some information about the sample's fabric from field collection
 % foliation information
 strike = 15
