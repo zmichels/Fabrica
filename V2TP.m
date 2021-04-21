@@ -21,5 +21,5 @@ trd(trd<0) = trd(trd<0)+360;
 
 trd(plg<0)= trd(plg<0)-180;
 plg(plg<0)= -plg(plg<0);
-trd(trd<0) = trd(trd<0)+180;
+trd(trd<0) = trd(trd<0)+360;
 end
