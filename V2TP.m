@@ -19,4 +19,7 @@ trd = (360 - rho) + 90;
 trd(trd>360) = trd(trd>360)-360;
 trd(trd<0) = trd(trd<0)+360;
 
+trd(plg<0)= trd(plg<0)-180;
+plg(plg<0)= -plg(plg<0);
+trd(trd<0) = trd(trd<0)+180;
 end
