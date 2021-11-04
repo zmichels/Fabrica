@@ -27,11 +27,11 @@ zdir = getMTEXpref('zAxisDirection');
 
 switch zdir
     
-    case 'outOfPlane'
+    case {'outOfPlane','OutOfPlane'}
         poleDir = -yvector;
         linDir = xvector;
         
-    case 'intoPlane'
+    case {'intoPlane','IntoPlane'}
         poleDir = yvector;
         linDir = -xvector;
     

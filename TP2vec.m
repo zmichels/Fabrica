@@ -14,16 +14,16 @@ zdir = getMTEXpref('zAxisDirection');
 % x-axis preference cases:
 switch xdir
     
-    case 'east'
+    case {'east', 'East'}
         % no need to do anything
         
-    case 'west'
+    case {'west','West'}
         plunge = -plunge;
         
-    case 'north'
+    case {'north','North'}
         trend = trend + 90;
         
-    case 'south'
+    case {'south','South'}
         trend = trend - 90;
 end
     
@@ -31,10 +31,10 @@ end
 % z-axis preference cases:
 switch zdir
     
-    case 'outOfPlane'
+    case {'outOfPlane','OutOfPlane'}
         % no need to do anything
         
-    case 'intoPlane'
+    case {'intoPlane', 'IntoPlane'}
         trend = -trend;
         plunge = -plunge;
     
