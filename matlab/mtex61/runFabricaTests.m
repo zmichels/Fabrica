@@ -1,5 +1,5 @@
 function runFabricaTests
-%RUNFABRICATESTS Verify the public MATLAB workflow with MTEX 6.1.1.
+%RUNFABRICATESTS Verify the public MATLAB workflow with MTEX 6.1.1 or 7.2.
 % Run startup_mtex first, then add the Fabrica directory to the MATLAB path.
 
 here = fileparts(mfilename('fullpath'));
@@ -15,5 +15,5 @@ test_randFab;
 test_fabrica_plot_frames;
 test_geographic_convention_proof;
 test_fabrica_matrix;
-fprintf('All Fabrica MATLAB MTEX 6.1.1 tests passed.\n');
+fprintf('All Fabrica MATLAB tests passed under %s.\n',getMTEXpref('version'));
 end

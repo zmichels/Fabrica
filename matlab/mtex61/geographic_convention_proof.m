@@ -22,8 +22,9 @@ if nargin < 4 || isempty(outputPath)
         error('geographic_convention_proof:OutputRequired', ...
             'Supply outputPath for a custom CSV so the bundled synthetic figure is preserved.');
     end
-    outputPath = fullfile(fileparts(mfilename('fullpath')), ...
-        'geographic_convention_proof_mtex61.png');
+    defaultFile = sprintf('geographic_convention_proof_%s.png', ...
+        fabricaMtexArtifactSuffix);
+    outputPath = fullfile(fileparts(mfilename('fullpath')),defaultFile);
 end
 
 field = readtable(csvPath,'TextType','string');
@@ -102,7 +103,7 @@ for k = 1:numel(cases)
     end
     c = cases(k);
     plot(c.pole,'antipodal','lower','plane',c.pc, ...
-        'LineColor',[0.15 0.35 0.65],'LineWidth',1.8);
+        'LineColor',[0.15 0.35 0.65],'LineWidth',1.8,'noLabel');
     hold on
     % MTEX annotate defaults to add2all; bind each symbol to this panel.
     annotate(c.pole,'Marker','s','MarkerSize',11, ...

@@ -1,9 +1,9 @@
-# Fabrica for MATLAB MTEX 6.1.1
+# Fabrica for MATLAB MTEX 6.1.1 and 7.2
 
 Fabrica maps a specimen's foliation and lineation to field measurements, then
 uses that rotation to show MTEX orientations and EBSD results in a geographic
 reference frame. This edition was tested with **MATLAB R2025b and MTEX
-6.1.1**. The separately tested [Python port](../../python/README.md) uses the
+6.1.1 or 7.2.0**. The separately tested [Python port](../../python/README.md) uses the
 installed `mtex==1.0.0` package, whose version number is independent of MATLAB
 MTEX.
 
@@ -85,7 +85,7 @@ data are required for the examples or tests.
 
 ## Reproducible checks
 
-From MATLAB with MTEX 6.1.1 installed:
+From MATLAB with MTEX 6.1.1 or 7.2.0 installed:
 
 ```matlab
 startup_mtex
@@ -101,7 +101,9 @@ audit crosses 120 specimen line/pole pairs, 592 valid field strike/dip/pitch
 cases, and eight plotting conventions (**568,320 mappings**). It compares the
 mapped line and pole against independent numeric East/North/Down geometry and
 records worst cases, quantiles, and complete residual histograms in
-`geographic_matrix_report_mtex61.json`. Exactly vertical trend-only cases
+`geographic_matrix_report_mtex61.json` or
+`geographic_matrix_report_mtex72.json`, according to the active MTEX version.
+Exactly vertical trend-only cases
 that cannot determine an oblique lineation are excluded; pitch-based exact
 vertical-line cases are checked separately. Deliberately wrong convention and
 pole-side controls produce large errors.
@@ -124,7 +126,7 @@ audit, and scripts for geographic example and residual-density figures. The
 MATLAB and Python audits use different deterministic grids; their JSON reports
 are separate validation records.
 
-On the tested macOS MATLAB R2025b installation, MTEX contour figures export
+On the tested macOS MATLAB R2025b installation, MTEX 6.1.1 contour figures export
 successfully, but `matlab -batch` segfaults during shutdown after a contour
 plot. A standalone MTEX `plot(...,'contour')` reproduces the same shutdown
 crash without Fabrica. The `plotFabCont` geometry is checked by the numeric
@@ -137,6 +139,14 @@ panel has the same geographic trace, pole, and lineation despite its different
 screen convention and specimen-axis assignment.
 
 ![MATLAB MTEX 6.1.1 geographic lower-hemisphere proof across eight plotting conventions](geographic_convention_proof_mtex61.png)
+
+The same field row under MTEX 7.2.0 gives the same geographic traces and
+symbols. The 7.2 run completed all 568,320 mappings with maximum mapped
+line-direction component error 3.94×10⁻¹² and equal-area projection error
+2.06×10⁻¹². The 7.2 figure suppresses MTEX's automatic specimen-axis labels
+so the N/E/S/W geographic annotations remain clear.
+
+![MATLAB MTEX 7.2 geographic lower-hemisphere proof across eight plotting conventions](geographic_convention_proof_mtex72.png)
 
 The Python figure overlays the eight mappings for two synthetic fabrics and
 compares residual distributions from the separate MATLAB and Python grids.
