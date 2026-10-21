@@ -1,0 +1,167 @@
+{
+  "source_csv": "python/field_fabric_synthetic.csv",
+  "field": {
+    "name": "SYNTHETIC DOWN-DIP",
+    "strike": 30.0,
+    "dip": 60.0,
+    "dipDir": "SE",
+    "trend": 120.0,
+    "plunge": 60.0
+  },
+  "projection": "equal-area Schmidt, lower hemisphere, geographic N up/E right",
+  "max_projected_coordinate_difference": 2.220446049250313e-16,
+  "cases": [
+    {
+      "convention": "+Z out, +X east",
+      "specimen_line": "+X",
+      "specimen_pole": "+Y",
+      "pole_xy": [
+        -0.6123724356957946,
+        0.3535533905932739
+      ],
+      "line_xy": [
+        0.31698729810778065,
+        -0.18301270189221922
+      ],
+      "plane_miss_degrees": 1.2722218725854067e-14,
+      "line_rotation_error_degrees": 1.066790471086142e-14,
+      "pole_rotation_error_degrees": 0.0,
+      "solved_line_error_degrees": 1.066790471086142e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.885780586188048e-16
+    },
+    {
+      "convention": "+Z out, +Y east",
+      "specimen_line": "+Y",
+      "specimen_pole": "-X",
+      "pole_xy": [
+        -0.6123724356957947,
+        0.35355339059327395
+      ],
+      "line_xy": [
+        0.31698729810778054,
+        -0.1830127018922192
+      ],
+      "plane_miss_degrees": 9.54166404439055e-15,
+      "line_rotation_error_degrees": 2.135062081498307e-14,
+      "pole_rotation_error_degrees": 4.497983566394944e-15,
+      "solved_line_error_degrees": 1.4223872947815224e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.885780586188048e-16
+    },
+    {
+      "convention": "+Z out, -X east",
+      "specimen_line": "-X",
+      "specimen_pole": "-Y",
+      "pole_xy": [
+        -0.6123724356957946,
+        0.3535533905932739
+      ],
+      "line_xy": [
+        0.31698729810778065,
+        -0.18301270189221922
+      ],
+      "plane_miss_degrees": 1.2722218725854067e-14,
+      "line_rotation_error_degrees": 1.066790471086142e-14,
+      "pole_rotation_error_degrees": 0.0,
+      "solved_line_error_degrees": 1.066790471086142e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.885780586188048e-16
+    },
+    {
+      "convention": "+Z out, -Y east",
+      "specimen_line": "-Y",
+      "specimen_pole": "+X",
+      "pole_xy": [
+        -0.6123724356957945,
+        0.35355339059327395
+      ],
+      "line_xy": [
+        0.3169872981077807,
+        -0.18301270189221924
+      ],
+      "plane_miss_degrees": 1.2722218725854067e-14,
+      "line_rotation_error_degrees": 7.991044738720528e-15,
+      "pole_rotation_error_degrees": 7.111936473907614e-15,
+      "solved_line_error_degrees": 1.4223872947815228e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.3306690738754696e-16
+    },
+    {
+      "convention": "-Z out, +X east",
+      "specimen_line": "+X",
+      "specimen_pole": "-Y",
+      "pole_xy": [
+        -0.6123724356957946,
+        0.3535533905932739
+      ],
+      "line_xy": [
+        0.31698729810778065,
+        -0.18301270189221922
+      ],
+      "plane_miss_degrees": 1.2722218725854067e-14,
+      "line_rotation_error_degrees": 1.066790471086142e-14,
+      "pole_rotation_error_degrees": 0.0,
+      "solved_line_error_degrees": 1.066790471086142e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.885780586188048e-16
+    },
+    {
+      "convention": "-Z out, +Y east",
+      "specimen_line": "+Y",
+      "specimen_pole": "+X",
+      "pole_xy": [
+        -0.6123724356957945,
+        0.35355339059327395
+      ],
+      "line_xy": [
+        0.3169872981077807,
+        -0.18301270189221924
+      ],
+      "plane_miss_degrees": 1.2722218725854067e-14,
+      "line_rotation_error_degrees": 7.991044738720528e-15,
+      "pole_rotation_error_degrees": 7.111936473907614e-15,
+      "solved_line_error_degrees": 1.4223872947815228e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.3306690738754696e-16
+    },
+    {
+      "convention": "-Z out, -X east",
+      "specimen_line": "-X",
+      "specimen_pole": "+Y",
+      "pole_xy": [
+        -0.6123724356957946,
+        0.3535533905932739
+      ],
+      "line_xy": [
+        0.31698729810778065,
+        -0.18301270189221922
+      ],
+      "plane_miss_degrees": 1.2722218725854067e-14,
+      "line_rotation_error_degrees": 1.066790471086142e-14,
+      "pole_rotation_error_degrees": 0.0,
+      "solved_line_error_degrees": 1.066790471086142e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.885780586188048e-16
+    },
+    {
+      "convention": "-Z out, -Y east",
+      "specimen_line": "-Y",
+      "specimen_pole": "-X",
+      "pole_xy": [
+        -0.6123724356957947,
+        0.35355339059327395
+      ],
+      "line_xy": [
+        0.31698729810778054,
+        -0.1830127018922192
+      ],
+      "plane_miss_degrees": 9.54166404439055e-15,
+      "line_rotation_error_degrees": 2.135062081498307e-14,
+      "pole_rotation_error_degrees": 4.497983566394944e-15,
+      "solved_line_error_degrees": 1.4223872947815224e-14,
+      "solved_pole_error_degrees": 0.0,
+      "trace_plane_max_dot": 3.885780586188048e-16
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "elapsed_seconds": 0.827,
+  "specimen_line_count": 54,
+  "orthogonal_poles_per_line": 6,
+  "specimen_pair_count": 324,
+  "field_grid_strikes_deg": [
+    0,
+    89.999,
+    90,
+    135,
+    225,
+    359.999
+  ],
+  "field_grid_dips_deg": [
+    0,
+    0.01,
+    45,
+    89.99,
+    90
+  ],
+  "field_grid_rakes_deg": [
+    0,
+    0.01,
+    45,
+    90,
+    135,
+    179.99,
+    180
+  ],
+  "field_grid_candidate_count": 210,
+  "field_case_count": 180,
+  "skipped_field_case_count": 30,
+  "skipped_field_cases": [
+    {
+      "field": "s0-d90-r0.01",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s0-d90-r45",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s0-d90-r90",
+      "reason": "undefined_vertical_line_trend"
+    },
+    {
+      "field": "s0-d90-r135",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s0-d90-r179.99",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s89.999-d90-r0.01",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s89.999-d90-r45",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s89.999-d90-r90",
+      "reason": "undefined_vertical_line_trend"
+    },
+    {
+      "field": "s89.999-d90-r135",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s89.999-d90-r179.99",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s90-d90-r0.01",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s90-d90-r45",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s90-d90-r90",
+      "reason": "undefined_vertical_line_trend"
+    },
+    {
+      "field": "s90-d90-r135",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s90-d90-r179.99",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s135-d90-r0.01",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s135-d90-r45",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s135-d90-r90",
+      "reason": "undefined_vertical_line_trend"
+    },
+    {
+      "field": "s135-d90-r135",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s135-d90-r179.99",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s225-d90-r0.01",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s225-d90-r45",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s225-d90-r90",
+      "reason": "undefined_vertical_line_trend"
+    },
+    {
+      "field": "s225-d90-r135",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s225-d90-r179.99",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s359.999-d90-r0.01",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s359.999-d90-r45",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s359.999-d90-r90",
+      "reason": "undefined_vertical_line_trend"
+    },
+    {
+      "field": "s359.999-d90-r135",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    },
+    {
+      "field": "s359.999-d90-r179.99",
+      "reason": "vertical_plane_pitch_underdetermined_by_trend"
+    }
+  ],
+  "plotting_convention_count": 8,
+  "total_mapping_cases": 466560,
+  "thresholds": {
+    "plotting_basis_xyz": 1e-10,
+    "field_direction_xyz": 1e-08,
+    "rotation_mapping_xyz": 1e-08,
+    "pole_plane_dot": 1e-08,
+    "equal_area_xy": 1e-08,
+    "equal_area_cross_convention_xy": 1e-08,
+    "V2TP_trend_deg": 1e-07,
+    "V2TP_plunge_deg": 1e-07
+  },
+  "metrics": {
+    "plotting_basis_xyz": {
+      "max_error": 2.220446049250313e-16,
+      "worst_case": {
+        "convention": "x-north-z-out",
+        "component": "",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s0-d0-r0",
+        "strike_deg": 0,
+        "dip_deg": 0,
+        "rake_deg": 0
+      }
+    },
+    "field_direction_xyz": {
+      "max_error": 2.8624992816736164e-12,
+      "worst_case": {
+        "convention": "x-north-z-out",
+        "component": "lineation",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s225-d89.99-r0",
+        "strike_deg": 225,
+        "dip_deg": 89.99,
+        "rake_deg": 0
+      }
+    },
+    "rotation_mapping_xyz": {
+      "max_error": 2.863063577424534e-12,
+      "worst_case": {
+        "convention": "x-north-z-in",
+        "component": "third_axis",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 60,
+        "field": "s225-d89.99-r0",
+        "strike_deg": 225,
+        "dip_deg": 89.99,
+        "rake_deg": 0
+      }
+    },
+    "pole_plane_dot": {
+      "max_error": 4.440892098500626e-16,
+      "worst_case": {
+        "convention": "x-east-z-out",
+        "component": "",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s225-d90-r0",
+        "strike_deg": 225,
+        "dip_deg": 90,
+        "rake_deg": 0
+      }
+    },
+    "equal_area_xy": {
+      "max_error": 2.024006194579133e-12,
+      "worst_case": {
+        "convention": "x-east-z-out",
+        "component": "lineation",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s225-d89.99-r0",
+        "strike_deg": 225,
+        "dip_deg": 89.99,
+        "rake_deg": 0
+      }
+    },
+    "V2TP_trend_deg": {
+      "max_error": 2.0122570276726037e-11,
+      "worst_case": {
+        "convention": "x-east-z-out",
+        "component": "lineation",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s0-d89.99-r90",
+        "strike_deg": 0,
+        "dip_deg": 89.99,
+        "rake_deg": 90
+      }
+    },
+    "V2TP_plunge_deg": {
+      "max_error": 1.6400912461517525e-10,
+      "worst_case": {
+        "convention": "x-east-z-out",
+        "component": "lineation",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s225-d89.99-r0",
+        "strike_deg": 225,
+        "dip_deg": 89.99,
+        "rake_deg": 0
+      }
+    },
+    "equal_area_cross_convention_xy": {
+      "max_error": 1.2561024269330812e-15,
+      "worst_case": {
+        "convention": "x-north-z-in",
+        "component": "lineation",
+        "specimen_line_index": 0,
+        "specimen_line_xyz": [
+          0.2030582,
+          0.0,
+          0.9791667
+        ],
+        "pole_angle_deg": 0,
+        "field": "s359.999-d0.01-r179.99",
+        "strike_deg": 359.999,
+        "dip_deg": 0.01,
+        "rake_deg": 179.99
+      }
+    }
+  },
+  "residualDistributions": {
+    "directionUnitVector": {
+      "definition": "Per mapping, maximum Euclidean unit-vector error of rotated specimen line and pole in geographic East/North/Down.",
+      "count": 466560,
+      "quantiles": {
+        "p50": 3.460805942004251e-16,
+        "p90": 5.477895207820194e-13,
+        "p99": 2.1545127105811884e-12,
+        "p99_9": 2.862599066069875e-12,
+        "max": 2.862932141585727e-12
+      },
+      "log10BinEdges": [
+        -17.0,
+        -16.5,
+        -16.0,
+        -15.5,
+        -15.0,
+        -14.5,
+        -14.0,
+        -13.5,
+        -13.0,
+        -12.5,
+        -12.0,
+        -11.5,
+        -11.0,
+        -10.5,
+        -10.0,
+        -9.5,
+        -9.0,
+        -8.5,
+        -8.0
+      ],
+      "log10BinCounts": [
+        427,
+        3820,
+        198974,
+        171042,
+        1577,
+        0,
+        0,
+        2592,
+        10368,
+        51840,
+        25920,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "histogramClipping": "Residuals below 1e-17 enter the first bin; above 1e-8 enter the last bin. Quantiles use raw values."
+    },
+    "equalAreaUnitHorizon": {
+      "definition": "Per mapping, maximum Euclidean equal-area XY error of rotated specimen line and pole, with horizon radius normalized to one.",
+      "count": 466560,
+      "quantiles": {
+        "p50": 5.933464366067994e-16,
+        "p90": 6.638427644411106e-13,
+        "p99": 1.077249657254944e-12,
+        "p99_9": 1.4312177828662483e-12,
+        "max": 1.4313747921118804e-12
+      },
+      "log10BinEdges": [
+        -17.0,
+        -16.5,
+        -16.0,
+        -15.5,
+        -15.0,
+        -14.5,
+        -14.0,
+        -13.5,
+        -13.0,
+        -12.5,
+        -12.0,
+        -11.5,
+        -11.0,
+        -10.5,
+        -10.0,
+        -9.5,
+        -9.0,
+        -8.5,
+        -8.0
+      ],
+      "log10BinCounts": [
+        217,
+        2253,
+        105462,
+        143362,
+        130,
+        0,
+        0,
+        2592,
+        111695,
+        93073,
+        7776,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "histogramClipping": "Residuals below 1e-17 enter the first bin; above 1e-8 enter the last bin. Quantiles use raw values."
+    }
+  },
+  "negative_control": {
+    "case": "control-southeast-oblique",
+    "expected_convention": "x-east-z-out",
+    "incorrect_convention": "x-west-z-out",
+    "correct_direction_error_xyz": 2.3714374201337736e-16,
+    "incorrect_direction_error_xyz": 1.7320508075688772,
+    "detection_threshold_xyz": 1e-08,
+    "detected": true
+  },
+  "passed": true
+}
