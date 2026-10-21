@@ -32,7 +32,13 @@ for iz = 1:numel(outs)
     assert(angle(fabRot*linDir,linV,'noSymmetry') < 1e-6);
     assert(angle(fabRot*poleDir,poleV,'noSymmetry') < 1e-6);
     assert(abs(dot(linV,poleV)) < 1e-6);
-    assert(fabOr.CS == crystalSymmetry('mmm'));
+    expectedCS = crystalSymmetry('mmm');
+    actualAxes = fabOr.CS.axes;
+    expectedAxes = expectedCS.axes;
+    assert(fabOr.CS.id == expectedCS.id && ...
+      all(abs(actualAxes.x(:)-expectedAxes.x(:)) < 1e-12) && ...
+      all(abs(actualAxes.y(:)-expectedAxes.y(:)) < 1e-12) && ...
+      all(abs(actualAxes.z(:)-expectedAxes.z(:)) < 1e-12));
     [gotTrend,~] = V2TP(linV,pc);
     assert(abs(mod(gotTrend-42+180,360)-180) < 1e-6);
 
@@ -105,5 +111,5 @@ odf = unimodalODF(ori);
 rotOdf = rotODFGeo(odf,fabRot);
 assert(isa(rotOdf,'SO3Fun'));
 assert(abs(eval(rotOdf,rotOri)-eval(odf,ori)) < 1e-5);
-fprintf('Fabrica MTEX 6.1 direction and fabric cases passed.\n');
+fprintf('Fabrica direction and fabric cases passed under %s.\n',getMTEXpref('version'));
 end

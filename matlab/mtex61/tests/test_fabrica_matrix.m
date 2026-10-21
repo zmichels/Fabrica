@@ -1,4 +1,4 @@
-function report = test_fabrica_matrix
+function report = test_fabrica_matrix(reportPath)
 %TEST_FABRICA_MATRIX Deterministic spherical-grid audit of geographic fabric.
 % The independent oracle is numerical east/north/down geometry. It does not
 % use Fabrica to construct expected field directions. The grid crosses
@@ -221,8 +221,12 @@ report = struct('specimenLineDirections',size(specimenLines,1), ...
         'Errors below 1e-17, including exact zeros, are placed in the first log10 histogram bin.'), ...
     'negativeControlWrongConventionGap',wrongConventionGap, ...
     'negativeControlWrongPolePlaneDot',wrongPolePlaneDot);
-here = fileparts(mfilename('fullpath'));
-reportPath = fullfile(here,'..','geographic_matrix_report_mtex61.json');
+if nargin < 1 || isempty(reportPath)
+    here = fileparts(mfilename('fullpath'));
+    defaultFile = sprintf('geographic_matrix_report_%s.json', ...
+        fabricaMtexArtifactSuffix);
+    reportPath = fullfile(here,'..',defaultFile);
+end
 fid = fopen(reportPath,'w');
 assert(fid ~= -1,'Cannot write matrix report.');
 cleaner = onCleanup(@() fclose(fid));
